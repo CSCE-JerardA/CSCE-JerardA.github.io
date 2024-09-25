@@ -1,18 +1,20 @@
+
+
 body {
     background-color: burlywood;
     font-family: Arial, Helvetica, sans-serif;
-    }
-    h1 {
+}
+h1{
     color:black;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     }
-    h2{
+h2{
     color: black;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    }
-    about{
+}
+about{
         background-color: blanchedalmond;
         font-family: 'Times New Roman', Times, serif;
-    }
+}
