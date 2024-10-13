@@ -23,7 +23,10 @@ h3{
         text-align: center;
 }
 
-.projects{ display: flex;flex-wrap:wrap; }
+.projects{ 
+    display: flex;
+    flex-wrap:wrap;
+ }
 .project{
     width: 30%;
     
