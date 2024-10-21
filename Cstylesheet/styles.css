@@ -26,6 +26,7 @@ h3{
 .projects{ 
     display: flex;
     flex-wrap:wrap;
+    text-align: center;
  }
 .project{
     width: 30%;
@@ -37,4 +38,20 @@ h3{
     background-color:aquamarine ;
 
     border-radius: 25%;
+}
+
+.project img{
+
+    width : 300px;
+    height: 300px;
+    margin: 10px;
+    border:2px solid rgb(blue);
+    display:block;
+    margin:auto;
+
+}
+
+a{
+    text-decoration: underline;
+    color:blue
 }
