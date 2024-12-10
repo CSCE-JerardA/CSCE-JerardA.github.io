@@ -48,7 +48,7 @@ h3{
 
 .projects{ 
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap:wrap-reverse;
     text-align: center;
  }
 .project{
@@ -58,7 +58,7 @@ h3{
 
     padding: 20px 10px;
 
-    background-color:floralwhite ;
+    background-color:thistle;
 
     border-radius: 25%;
 }
@@ -79,11 +79,15 @@ a{
     color:blue
 }
 
-.skills{
+.Skills{
     text-align: center;
 }
 
 .resume{
     text-align: center;
+    align-content: center;
 }
+
+
+
 
