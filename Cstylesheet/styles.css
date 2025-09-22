@@ -32,8 +32,13 @@ a{
     color:blue
 }
 
-.Skills{
-    text-align: center;
+.skills-box{
+    border: 2px solid#106364;
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px auto;
+    background-color: #f4f4f4; 
+    max-width: 400px; 
 }
 
 .resume{
