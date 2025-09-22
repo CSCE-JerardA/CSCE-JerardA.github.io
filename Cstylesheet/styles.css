@@ -1,23 +1,30 @@
 
 
-body {
-    background-color:indianred;
-    font-family: Arial, Helvetica, sans-serif;
+:root{
+    --primarycolor: #34495e;
+    --secondarycolor: #ecf0f1;
+    --accentcolor: #3498db;
 }
-h1{
-    color:black;
+
+body {
+    background-color: var(--secondarycolor);
+    font-family: 'Roboto', Arial, sans-serif;
+}
+h1, h2, h3{
+    color: var(--primarycolor);
     text-align: center;
     
     }
-h2{
-    color:black;
-    text-align: center;
+
+a{
+    color: var(--accentcolor);
+    text-decoration:none;
 }
 
-h3{
-    color:black;
-    text-align: center;
+a:hover{
+    text-decoration: underline;
 }
+
 
 .about{
         display: flex;
