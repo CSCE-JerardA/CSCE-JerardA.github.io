@@ -4,15 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <title>Jerard Austin  | Developer Portfolio </title>
-        <!--Used for Loading in Tailwind CSS-->
-        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap", rel="stylesheet">
 
         <style>
-            @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap);
+
+            :root {
+                --primary_col: #106364;
+                --secondary_col: #d3fbd3;
+                --accent_col: #40ccab;
+                --boxes: #f4f4f4;
+                --text_col: 
+            }
+
+            .container{
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 0;
+            }
+
+
             body{
                 font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                color: var(--text_col);
 
-                background-color: #d4ecd4;
+                background-color: var(--secondary_col);
+
+                margin: 0;
+                padding: 2rem 1rem;
             }
 
             ::-webkit-scrollbar {
@@ -51,16 +70,12 @@
             }
         </script>
 
-
-
-        <link rel="stylesheet" href="Cstylesheet/styles.css">
     </head>
     <body class="text-gray-900 min-h-screen p-4 md:p-8">
         
-    
-        <div class="about">
-            <h2>About me</h2>
-            <img src="images/Screenshot 2024-11-03 165157.png">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <header class>About me</h2>
+            
             <p>
                 Hello, My name is Jerard Austin and welcome to my portfolio. 
                 My goal is become the best developer and student I can be. 
