@@ -9,12 +9,13 @@
 
         <style>
 
+            /* Establishes the colors for my site */
             :root {
                 --primary_col: #106364;
                 --secondary_col: #d3fbd3;
                 --accent_col: #40ccab;
                 --boxes: #f4f4f4;
-                --text_col: 
+                --text_col: #333; 
             }
 
             .container{
@@ -44,6 +45,7 @@
                 margin-bottom: 1rem;
             }
 
+            /* Header Section */
             .header{
                 display: flex;
                 justify-content: space-between;
@@ -73,7 +75,7 @@
                 text-decoration: underline;
             }
 
-
+            /* About Section */
             .about-contents{
                 display: flex;
                 gap: 2rem;
@@ -95,6 +97,7 @@
                 margin-bottom: 1px;
             }
 
+            /* Skills Section */
             .skill-grid {
                 display: flex;
                 justify-content: center;
@@ -133,6 +136,58 @@
                 font-weight: 500;
             }
 
+            .project-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                padding-top: 1rem;
+            }
+
+            .projects-card {
+                background-color: #f4f4f4;
+                padding: 25px;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s;
+                border: 1px solid #f4f4f4;
+
+            }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(64, 204, 171, 0.3);
+            }
+
+            /* Call to Action or Resume Button */
+            .cta-button {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 24px;
+                background-color: var(--accent_col);
+                color: var(--secondary_col);
+                border-radius: 9999px;
+                text-decoration: none;
+                font-weight: bold;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s;
+
+            }
+
+            .cta-button:hover {
+                background-color: #35a88e;
+                text-decoration: none;
+            }
+
+            .contact-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                color: var(--text_col);
+            }
+
+            
 
 
             ::-webkit-scrollbar {
