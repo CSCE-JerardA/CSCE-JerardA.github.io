@@ -53,6 +53,88 @@
                 margin-bottom: 2rem;
             }
 
+            .header h1 {
+                text-align: left;
+                margin-bottom: 0;
+
+            }
+
+            /* For navigating the site */
+            .nav a{
+                margin-left: 1rem;
+                text-decoration: none;
+                color: var(--primary_col);
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+            .nav a:hover{
+                color: var(--accent_col);
+                text-decoration: underline;
+            }
+
+
+            .about-contents{
+                display: flex;
+                gap: 2rem;
+                background-color: white;
+                padding: 2rem;
+                border-radius: 12px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                border: 1px solid #dcdbdb;
+            }
+
+            .profile-card {
+                flex: 0 0 200px;
+                text-align: center;
+            }
+
+            .profile-card img {
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+                margin-bottom: 1px;
+            }
+
+            .skill-grid {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                flex-wrap: wrap;
+            }
+
+            .skills-box {
+                border: 2px solid var(--primary_col);
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px 0;
+                background-color: var(--boxes);
+                max-width: 400px;
+                flex-basis: 100%;
+            }
+
+            @media (min-width: 770) {
+                .skills-box {
+                    flex-basis: 45%;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                
+            }
+
+            .skills-tag {
+                display: inline-block;
+                padding: 5px 10px;
+                margin: 5px;
+                background-color: #f4f4f4;
+                color: var(--primary_col);
+                border: 1px solid var(--primary_col);
+                border-radius: 50px;
+                font-size: 0.875;
+                font-weight: 500;
+            }
+
+
+
             ::-webkit-scrollbar {
                 width: 8px;
             }
