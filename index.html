@@ -12,7 +12,7 @@
             /* Establishes the colors for my site */
             :root {
                 --primary_col: #106364;
-                --secondary_col: #d3fbd3;
+                --secondary_col: #d1fdd1;
                 --accent_col: #40ccab;
                 --boxes: #f4f4f4;
                 --text_col: #333; 
@@ -136,6 +136,7 @@
                 font-weight: 500;
             }
 
+            /* Projects Section */
             .project-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -179,6 +180,7 @@
                 text-decoration: none;
             }
 
+            /* Contact Section */
             .contact-item {
                 display: flex;
                 align-items: center;
@@ -187,9 +189,27 @@
                 color: var(--text_col);
             }
 
+            .contact-item-svg {
+                fill: none;
+                stroke: var(--primary_col);
+                width: 24px;
+                height: 24px;
+                margin-right: 0.75rem;
+            }
+
+            .footer {
+                text-align: center;
+                font-size: 0.875rem;
+                color: #6b7280;
+                padding-top: 2rem;
+                border-top: 1px solid #ddd;
+            }
+
             
 
+            
 
+            /* Added a scroll bar just for show */
             ::-webkit-scrollbar {
                 width: 8px;
             }
@@ -204,27 +224,11 @@
                 text-align: center;
             }
 
+            /* Also added an image from my favorite gaming franchise */
             .text-cactuar {
                 color: #40ccab;
             }
         </style>
-
-        <script>
-
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            'primary': '#106364',
-                            'secondary': '#f3f8f3',
-                            'accent': '#40ccab',
-                            'box-bg': '#f4f4f4'
-                        }
-
-                    }
-                }
-            }
-        </script>
 
     </head>
     <body class="text-gray-900 min-h-screen p-4 md:p-8">
