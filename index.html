@@ -215,6 +215,29 @@
                 border-top: 1px solid #ddd;
             }
 
+            .dark-mode {
+                --primary_col: #40ccab;
+                --secondary_col: #121212;
+                --accent_col: #fbfefb;
+                --boxes: #1e1e1e;
+                --text_col: #fbfefb;
+            }
+
+            /* Newly added dark mode for site */
+            .dark-mode .about-contents
+            .dark-mode .skills-box
+            .dark-mode .projects-card {
+                background-color: var(--boxes);
+                border: 1px solid #333;
+            }
+
+            .dark-mode .skills-tag{
+                background-color: #333;
+                color: var(--primary_col);
+                border-color: var(--primary_col);
+            }
+
+
             
 
             
@@ -257,6 +280,8 @@
                     <a href="#skills">Skills</a>
                     <a href="#projects">Projects</a>
                     <a href="contact">Contact</a>
+
+                    <a href="#"id="darkModeT"></a>
 
                 </nav>
 
@@ -417,6 +442,40 @@
 
                     <p style="font-size: 1.125rem;">864-749-3167</p>
                 </div>
+
+                <!--Adding Javascript section for dark mode-->
+                <script>
+
+                    const body = document.body;
+                    const toggleButton = document.getElementById('darkModeT');
+                    const darkModeKey = 'portfolioDarkMode';
+
+                    if(localStorage.getItem(darkModeKey) === 'enabled') {
+                        body.classList.add('dark-mode');
+                    }
+
+                    function toggleDarkMode() {
+                        body.classList.toggle('dark-mode');
+
+                        if(body.classList.contains('dark-mode')) {
+                            localStorage.setItem(darkModeKey, 'enabled');
+                            toggleButton.textContent = 'Light Mode ☀️';
+
+                        }
+
+                        else {
+                            localStorage.setItem(darkModeKey, 'disabled');
+                            toggleButton.textContent = "Dark Mode 🌙";
+                        }
+                    }
+
+                    if (toggleButton) {
+                        toggleButton.addEventListener('click', toggleDarkMode);
+
+                        toggleButton.textContent = body.classList.contains('dark-mode') ? 'Light Mode ☀️' : 'Dark Mode 🌙'
+                    }
+
+                </script>
             </section>
 
             <footer class="footer">
