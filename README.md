@@ -4,10 +4,10 @@ This is for my personal portfolio website, hosted at [csce-jerarda.github.io](ht
 You can view the live site here: **[https://csce-jerarda.github.io/](https://csce-jerarda.github.io/)**
 
 ## 🛠️ Built With
-* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+* **Frontend:** HTML5, CSS3, JavaScript
 * **Frameworks/Libraries:** React
 * **Deployment:** GitHub Pages
-* **Tools:** [e.g., VS Code, Git, Figma]
+* **Tools:** VS Code and Figma
 
 ## ✨ Key Features
 * **Responsive Design:** Fully optimized for mobile, tablet, and desktop views.
